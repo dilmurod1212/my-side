@@ -1,8 +1,10 @@
 <template>
   <Header />
-  <div class="relative top-[100px] bottom-[200px] mb-[140px] text-white">
-    <div class="container">
-      <div class="p-8 bg-black/70 backdrop-blur-sm my-4 mb-8">
+  <div
+    class="relative top-[100px] bottom-[200px] mb-[140px] text-white container max-md:p-0"
+  >
+    <div class="bg-black/70 backdrop-blur-sm">
+      <div class="p-8 container my-4 mb-8">
         <Title descr="portfolio" title="MY WORKS" />
         <div class="flex flex-col">
           <div

@@ -1,15 +1,15 @@
 <template>
   <Header />
-  <div class="relative top-[100px] bottom-[200px] mb-[140px]">
-    <div class="container text-white my-4">
-      <div class="p-8 bg-black/70 backdrop-blur-sm my-4 mb-8">
+  <div
+    class="relative top-[100px] bottom-[200px] mb-[140px] container max-md:p-0"
+  >
+    <div class="text-white bg-black/70 backdrop-blur-sm">
+      <div class="p-8 container my-4 mb-8">
         <Title descr="about" title="LEARN MORE ABOUT ME" />
         <div class="my-4 flex max-md:flex-col gap-4">
-          <div
-            class="w-[600px] h-[400px] max-md:w-full bg-red-400 overflow-hidden"
-          >
+          <div class="w-[600px] h-[400px] max-md:w-full overflow-hidden">
             <img
-              src="https://picsum.photos/200/200"
+              src="/images/me.jpg"
               alt=""
               class="w-full h-full object-cover"
             />
@@ -59,9 +59,9 @@
         <div class="mt-8">
           <Title descr="I'm use" />
           <div class="grid grid-cols-2 max-md:grid-cols-1 gap-6">
-            <div v-for="el in 6">
+            <div v-for="el in mySkils">
               <div class="flex justify-between mb-2">
-                <h2 class="font-bold">HTML</h2>
+                <h2 class="font-bold">{{ el.toUpperCase() }}</h2>
                 <i class="fa-solid fa-check-double"></i>
               </div>
               <div class="h-2 bg-gold w-full"></div>
@@ -76,6 +76,9 @@
 <script setup>
 import Header from "../components/Header.vue";
 import Title from "../components/Title.vue";
+import { skils } from "../data/scills";
+import { ref } from "vue";
+const mySkils = ref(skils);
 </script>
 
 <style lang="scss" scoped></style>
