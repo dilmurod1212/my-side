@@ -14,10 +14,10 @@
   </div>
   <div
     v-if="state"
-    class="container fixed py-16 left-0 top-0 z-40 h-screen w-screen bg-black/90"
+    class="container flex fixed left-0 top-0 z-40 h-screen w-screen bg-black/90"
   >
     <div
-      class="flex flex-col items-start justify-start border border-white/40 p-4 h-full w-full"
+      class="flex flex-col items-start justify-start border border-white/40 p-4 h-[75%] my-auto w-full"
     >
       <router-link
         v-for="el in navLinks"

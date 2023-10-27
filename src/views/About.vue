@@ -3,7 +3,7 @@
   <div
     class="relative top-[100px] bottom-[200px] mb-[140px] container max-md:p-0"
   >
-    <div class="text-white bg-black/70 backdrop-blur-sm">
+    <div class="text-white bg-black/60 backdrop-blur-sm">
       <div class="p-8 container my-4 mb-8">
         <Title descr="about" title="LEARN MORE ABOUT ME" />
         <div class="my-4 flex max-md:flex-col gap-4">
