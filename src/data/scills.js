@@ -5,6 +5,6 @@ export const skils = [
   "and-design",
   "javascript",
   "swiper-js",
-  "vue 2 | 3",
+  "vue 2 | 3, vue-router, vue-x | pinia",
   "git | github",
 ];
