@@ -12,7 +12,7 @@ export const sides = [
       "auto animate vue 3",
       "vue 3",
     ],
-    link: "https://tabarrukziyoratuz.netlify.app/",
+    link: "https://tabarruk-ziyorat-front.vercel.app",
   },
   {
     id: 1,
