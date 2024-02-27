@@ -34,12 +34,21 @@
                     </li>
                   </ul>
                 </div>
-                <a
-                  target="_blank"
-                  :href="el.link"
-                  class="max-md:text-sm py-1 border-b"
-                  >saytga o'tish</a
-                >
+                <div class="flex items-center gap-4">
+                  <a
+                    target="_blank"
+                    :href="el.link"
+                    class="max-md:text-sm py-1 underline"
+                    >saytga o'tish</a
+                  >
+                  <a
+                  v-if="el.github"
+                    target="_blank"
+                    :href="el.github"
+                    class="max-md:text-sm py-1 underline"
+                    >Github</a
+                  >
+                </div>
               </div>
             </div>
           </div>

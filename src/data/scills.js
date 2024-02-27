@@ -1,10 +1,11 @@
 export const skils = [
   "html",
   "css | scss",
-  "tailwind css, flowbite-ui",
-  "and-design",
+  "tailwind css",
+  // "and-design",
   "javascript",
-  "swiper-js",
+    "typescript",
   "vue 2 | 3, vue-router, vue-x | pinia",
+    "Nuxt 3",
   "git | github",
 ];

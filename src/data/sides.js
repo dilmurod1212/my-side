@@ -1,5 +1,20 @@
 export const sides = [
   {
+    id: 0,
+    title: "Tashkent parfum",
+    img: "/images/parfum.png",
+    tecnology: [
+      "html",
+      "tailwind-css",
+      "typescript",
+      "nuxt 3",
+      "i18n",
+      "pinia",
+    ],
+    link: "https://tashkent-parfum.vercel.app/",
+    github: "https://github.com/dilmurod1212/toshkent-parfum",
+  },
+  {
     id: 2,
     title: "tabarruk ziyorat",
     img: "/images/tabarruk-ziyorat.png",
@@ -13,6 +28,7 @@ export const sides = [
       "vue 3",
     ],
     link: "https://tabarruk-ziyorat-front.vercel.app",
+    github: "https://github.com/dilmurod1212/tabarruk-ziyorat",
   },
   {
     id: 1,
@@ -28,20 +44,20 @@ export const sides = [
     tecnology: ["html", "tailwind-css", "javascript"],
     link: "https://77-uz-js.netlify.app/",
   },
-  {
-    id: 4,
-    title: "react movie",
-    img: "/images/react-movie.png",
-    tecnology: ["html", "materialize-css", "javascript", "axios", "react js"],
-    link: "https://reac-movie-project.netlify.app/",
-  },
-  {
-    id: 5,
-    title: "vue movie",
-    img: "/images/vue-movie.png",
-    tecnology: ["html", "css", "bootstrap", "javascript", "axios", "vue 2"],
-    link: "https://my-vue-project-series.netlify.app/",
-  },
+  // {
+  //   id: 4,
+  //   title: "react movie",
+  //   img: "/images/react-movie.png",
+  //   tecnology: ["html", "materialize-css", "javascript", "axios", "react js"],
+  //   link: "https://reac-movie-project.netlify.app/",
+  // },
+  // {
+  //   id: 5,
+  //   title: "vue movie",
+  //   img: "/images/vue-movie.png",
+  //   tecnology: ["html", "css", "bootstrap", "javascript", "axios", "vue 2"],
+  //   link: "https://my-vue-project-series.netlify.app/",
+  // },
   {
     id: 6,
     title: "ishonch do'konlar tarmog'i",
