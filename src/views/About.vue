@@ -8,11 +8,11 @@
         <div class="p-8 container my-4 mb-8">
           <Title descr="about" title="LEARN MORE ABOUT ME" />
           <div class="my-4 flex max-md:flex-col gap-4">
-            <div class="w-[600px] h-[400px] max-md:w-full overflow-hidden">
+            <div class="w-[400px] max-md:w-full overflow-hidden">
               <img
                 src="/images/me.jpg"
                 alt=""
-                class="w-full h-full object-cover"
+                class="w-full  object-cover aspect-square"
               />
             </div>
             <div class="w-2/3 max-md:w-full">
