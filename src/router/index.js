@@ -6,18 +6,40 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "home",
-      component: Home,
+      name: "HomeLayout",
+      component: () => import("@/layout/Home.vue"),
+      redirect: { name: "home" },
+      children: [
+        {
+          path: "/",
+          name: "home",
+          component: Home,
+        },
+      ],
     },
     {
-      path: "/about",
-      name: "about",
-      component: () => import("../views/About.vue"),
-    },
-    {
-      path: "/portfolio",
-      name: "portfolio",
-      component: () => import("../views/Portfolio.vue"),
+      path: "/",
+      name: "Default",
+      component: () => import("@/layout/Default.vue"),
+      redirect: { name: "home" },
+      children: [
+        {
+          path: "/about",
+          name: "about",
+          component: () => import("../views/About.vue"),
+        },
+        {
+          path: "/portfolio",
+          name: "portfolio",
+          alias: ["/projects"],
+          component: () => import("../views/Portfolio.vue"),
+        },
+        {
+          path: "/projects/:id",
+          name: "projects",
+          component: () => import("../views/Project.vue"),
+        },
+      ],
     },
   ],
 });
