@@ -5,9 +5,9 @@
         {{ project?.title }}
       </h1>
       <img :src="project?.img" :alt="project.title" class="rounded-lg" />
-      <div class="mt-8 w-3/4 mx-auto">
+      <div class="mt-8 lg:w-3/4 mx-auto">
         <h2 v-if="project?.about" class="text-2xl mt-6 mb-4">Loyiha haqida</h2>
-        <p>{{ project?.about }}</p>
+        <p class="text-sm md:text-base">{{ project?.about }}</p>
         <a :href="project?.link" target="_blank" class="block mt-6">
           <Button text="Saytga o'tish" variant="gray" />
         </a>
