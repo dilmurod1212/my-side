@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="mb-[140px] container lg:w-3/4 text-white">
-      <h1 class="md:text-2xl lg:text-4xl mt-12 mb-4 font-bold">
+      <h1 class="text-2xl md:text-3xl lg:text-4xl mt-12 mb-4 font-bold">
         {{ project?.title }}
       </h1>
       <img :src="project?.img" :alt="project.title" class="rounded-lg" />
