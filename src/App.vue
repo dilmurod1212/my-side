@@ -6,7 +6,8 @@
       class="w-full h-screen object-cover fixed -z-20"
     />
     <div class="w-full h-screen fixed left-0 top-0 bg-black/40 -z-10"></div>
-    <home />
+    <!--    <home />-->
+    <router-view />
   </div>
 </template>
 

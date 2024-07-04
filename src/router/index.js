@@ -43,5 +43,8 @@ const router = createRouter({
     },
   ],
 });
-
+router.beforeEach((to, from) => {
+  window.scrollTo(0, 0);
+  // to and from are both route objects. must call `next`.
+});
 export default router;

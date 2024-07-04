@@ -13,8 +13,8 @@
     <i v-else class="fas fa-close relative z-50 text-2xl"></i>
   </div>
   <div
-    v-if="state"
-    class="container flex fixed left-0 top-0 z-40 h-screen w-screen bg-black/90"
+    :class="{ 'translate-x-0 transition-all': state }"
+    class="translate-x-full transition-all container flex fixed left-0 top-0 z-40 h-screen w-screen bg-black/90"
   >
     <div
       class="flex flex-col items-start justify-start border border-white/40 p-4 h-[75%] my-auto w-full"
@@ -32,8 +32,30 @@
 
 <script setup>
 import { navLinks } from "../data/navLinks";
-import { ref } from "vue";
+import { ref, watch } from "vue";
+import { useRoute } from "vue-router";
+const route = useRoute();
 const state = ref(false);
+watch(
+  () => route.path,
+  () => {
+    state.value = false;
+    if (state.value) {
+      document.body.style.overflowY = "hidden";
+    }
+  },
+  { deep: true }
+);
+watch(
+  () => state.value,
+  () => {
+    if (state.value) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "auto";
+    }
+  }
+);
 </script>
 
 <style lang="scss" scoped>
