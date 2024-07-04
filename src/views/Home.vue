@@ -12,8 +12,8 @@
       </div>
     </div>
     <div
-      v-if="state"
-      class="fixed left-0 top-0 z-40 h-screen w-screen bg-black/50"
+      :class="{ '!translate-x-0 transition-all': state }"
+      class="translate-x-full transition-all fixed left-0 top-0 z-40 h-screen w-screen bg-black/50"
     >
       <div class="container flex h-full w-full bg-black/80">
         <div

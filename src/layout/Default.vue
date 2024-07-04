@@ -4,7 +4,6 @@
     <main class="h-full grow">
       <router-view />
     </main>
-    <Footer />
   </div>
 </template>
 <script setup lang="js">
