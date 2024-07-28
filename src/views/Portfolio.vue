@@ -7,22 +7,21 @@
           <div class="flex flex-col">
             <div
               v-for="el in sidesInfo"
-              class="flex max-md:flex-col gap-5 py-12 border-b border-white/20 last-of-type:border-none"
+              class="flex max-lg:flex-col gap-5 py-12 border-b border-white/20 last-of-type:border-none"
             >
-              <router-link :to="`/projects/${el.id}`">
+              <div class="flex-shrink-0">
                 <img
                   :src="el.img"
                   :alt="el.title"
-                  class="w-[400px] max-md:w-full"
+                  class="w-[400px] max-lg:w-full object-cover"
                 />
-              </router-link>
+              </div>
               <div>
-                <router-link
-                  :to="`/projects/${el.id}`"
+                <div
                   class="capitalize text-4xl max-lg:text-2xl max-md:text-2xl mb-4 font-bold text-gold"
                 >
                   {{ el.title }}
-                </router-link>
+                </div>
                 <div>
                   <h2 class="text-sm my-2">Foydalanilgan texnologiyalar:</h2>
                   <ul class="flex flex-wrap gap-2 my-4">

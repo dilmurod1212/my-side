@@ -1,5 +1,15 @@
 export const sides = [
   {
+    id: 673542,
+    title: "Davr business",
+    about:
+      "Study in Uzbekistan - Xalqaro talabalar uchun O'zbekistonda oliy ta'lim haqidagi rasmiy veb-portal. BU portal orqali O'zbekistondagi oliy oquv yurtlari haqida barcha malumotlarni olish mumkin. Bu satyda men vazifam kamchiliklarni tuzatish xatolarni to'g'irlash va yangi funskiyalar qoshish bo'lgan. Qisqa qilib aytkanda bug-fix",
+    img: "/images/db2.png",
+    tecnology: ["vue 3", "pinia"],
+    link: "https://new.dbusiness.uz",
+    github: null,
+  },
+  {
     id: 67,
     title: "Study in Uzbekistan",
     about:
@@ -94,20 +104,20 @@ export const sides = [
   //   tecnology: ["html", "css", "bootstrap", "javascript", "axios", "vue 2"],
   //   link: "https://my-vue-project-series.netlify.app/",
   // },
-  {
-    id: 6,
-    title: "ishonch do'konlar tarmog'i",
-    about:
-      "Ishonch do'konlar tarmog'ining web-sayti. Bu saytni 2023-yil yanvar oylarida qilganman, u vaqtlar html cssni organib endi jsni boshlagandim. Har xil figma maketlar yasab yurgan vaqtim real biror saytni clone qilib kormoqchi bolganman. ",
-    img: "/images/ishonch-clone.png",
-    tecnology: ["html", "scss"],
-    link: "https://ishonch-clone.netlify.app/",
-  },
-  {
-    id: 7,
-    title: "digital marketing",
-    img: "/images/digital.png",
-    tecnology: ["html", "scss"],
-    link: "https://digital-marketingg-html-css.netlify.app/",
-  },
+  // {
+  //   id: 6,
+  //   title: "ishonch do'konlar tarmog'i",
+  //   about:
+  //     "Ishonch do'konlar tarmog'ining web-sayti. Bu saytni 2023-yil yanvar oylarida qilganman, u vaqtlar html cssni organib endi jsni boshlagandim. Har xil figma maketlar yasab yurgan vaqtim real biror saytni clone qilib kormoqchi bolganman. ",
+  //   img: "/images/ishonch-clone.png",
+  //   tecnology: ["html", "scss"],
+  //   link: "https://ishonch-clone.netlify.app/",
+  // },
+  // {
+  //   id: 7,
+  //   title: "digital marketing",
+  //   img: "/images/digital.png",
+  //   tecnology: ["html", "scss"],
+  //   link: "https://digital-marketingg-html-css.netlify.app/",
+  // },
 ];
